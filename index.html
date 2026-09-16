@@ -30,10 +30,10 @@
                 <span class="text-2xl font-extrabold tracking-tight"><span class="logo-black">Op</span><span class="logo-teal">Linked</span></span>
             </div>
             <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
-                <a href="#how-it-works" class="hover:text-[#57b5bc] transition">How It Works</a>
-                <a href="#customization" class="hover:text-[#57b5bc] transition">Customization</a>
                 <a href="#demo" class="hover:text-[#57b5bc] transition">Live Demo</a>
-                <a href="#pricing" class="hover:text-[#57b5bc] transition">Pricing</a>
+                <a href="#how-it-works" class="hover:text-[#c4a5ec] transition">How It Works</a>
+                <a href="#customization" class="hover:text-[#b8e08d] transition">Customization</a>
+                <a href="#pricing" class="hover:text-[#7fa9ec] transition">Pricing</a>
             </nav>
             <div>
                 <button onclick="openIncognitoDemo()" class="bg-teal-custom text-white font-semibold px-5 py-2.5 rounded-xl shadow-lg shadow-[#57b5bc]/20 transition cursor-pointer">
@@ -46,7 +46,6 @@
     <!-- HERO SECTION -->
     <section class="py-16 md:py-20 overflow-hidden">
         <div class="max-w-4xl mx-auto px-6 text-center">
-            <!-- Main Headline with Logo Brand Statement (Aqua 'Linked') -->
             <div class="flex items-center justify-center space-x-2.5 mb-6">
                 <div class="grid grid-cols-2 gap-0.5 w-6 h-6">
                     <div class="rounded-sm bg-[#57b5bc]"></div>
@@ -61,7 +60,6 @@
                 A simple, custom, affordable intercom built for modern dental practices.
             </h1>
             
-            <!-- Separated Descriptions -->
             <p class="text-base md:text-lg text-slate-700 font-semibold max-w-2xl mx-auto mb-3">
                 One web app accessed by a unique link. Accessible on any device with internet access—just paste into your browser.
             </p>
@@ -80,9 +78,10 @@
         </div>
     </section>
 
-    <!-- LIVE DEMO TRY IT OUT SECTION -->
-    <section id="demo" class="py-16 bg-slate-900 text-white">
-        <div class="max-w-4xl mx-auto px-6 text-center">
+    <!-- LIVE DEMO SECTION (Themed with Teal Hint #57b5bc) -->
+    <section id="demo" class="py-16 bg-slate-900 text-white relative overflow-hidden border-t-4 border-[#57b5bc]">
+        <div class="max-w-4xl mx-auto px-6 text-center relative z-10">
+            <span class="inline-block px-3 py-1 rounded-full bg-[#57b5bc]/10 text-[#57b5bc] text-xs font-bold tracking-wider uppercase mb-3 border border-[#57b5bc]/20">Interactive Experience</span>
             <h2 class="text-2xl md:text-3xl font-extrabold tracking-tight mb-3">Test OpLinked Live Right Now</h2>
             <p class="text-slate-300 max-w-xl mx-auto mb-6 text-sm">
                 Experience real-time operatory coordination and custom sound alerts.
@@ -108,10 +107,11 @@
         </div>
     </section>
 
-    <!-- HOW IT WORKS & FORMS SECTION -->
-    <section id="how-it-works" class="py-16 bg-white border-y border-slate-100">
+    <!-- HOW IT WORKS SECTION (Themed with Purple Hint #c4a5ec) -->
+    <section id="how-it-works" class="py-16 bg-white border-y border-slate-100 relative">
         <div class="max-w-4xl mx-auto px-6">
             <div class="text-center max-w-xl mx-auto mb-12">
+                <span class="inline-block px-3 py-1 rounded-full bg-[#c4a5ec]/10 text-[#8d67c5] text-xs font-bold tracking-wider uppercase mb-3 border border-[#c4a5ec]/20">Simple Deployment</span>
                 <div class="flex items-center justify-center space-x-2 mb-2">
                     <div class="grid grid-cols-2 gap-0.5 w-5 h-5">
                         <div class="rounded-sm bg-[#57b5bc]"></div>
@@ -124,7 +124,8 @@
                 <p class="text-slate-600 text-sm">A lightweight web intercom powered by Google Apps Script.</p>
             </div>
             
-            <div class="bg-slate-900 text-slate-200 p-8 rounded-3xl shadow-xl border border-slate-800 mb-10">
+            <div class="bg-slate-900 text-slate-200 p-8 rounded-3xl shadow-xl border border-slate-800 mb-10 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-[#c4a5ec]/5 rounded-full blur-2xl pointer-events-none"></div>
                 <h3 class="text-lg font-bold text-white mb-6 flex items-center">
                     <span class="mr-2">💡</span> Setup in 4 Easy Steps:
                 </h3>
@@ -150,13 +151,13 @@
 
             <!-- PROMINENT FORM ACTION BOXES -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <div class="bg-sky-50 border border-sky-200 p-6 rounded-2xl text-center flex flex-col justify-between">
+                <div class="bg-purple-50/50 border border-[#c4a5ec]/30 p-6 rounded-2xl text-center flex flex-col justify-between">
                     <div>
-                        <div class="text-xs font-bold uppercase tracking-wider text-sky-700 mb-1">Ready to Get Started?</div>
-                        <h4 class="font-bold text-sky-950 text-lg mb-2">Interest & Onboarding Form</h4>
-                        <p class="text-xs text-sky-800 mb-6">Submit your practice layout details and custom button names to request your unique link.</p>
+                        <div class="text-xs font-bold uppercase tracking-wider text-[#8d67c5] mb-1">Ready to Get Started?</div>
+                        <h4 class="font-bold text-slate-950 text-lg mb-2">Interest & Onboarding Form</h4>
+                        <p class="text-xs text-slate-600 mb-6">Submit your practice layout details and custom button names to request your unique link.</p>
                     </div>
-                    <a href="YOUR_INTEREST_FORM_URL_HERE" target="_blank" class="bg-sky-600 hover:bg-sky-700 text-white font-bold py-3 px-4 rounded-xl shadow transition text-sm block">
+                    <a href="YOUR_INTEREST_FORM_URL_HERE" target="_blank" class="bg-[#c4a5ec] hover:bg-[#b28ee5] text-slate-950 font-bold py-3 px-4 rounded-xl shadow transition text-sm block">
                         Fill Out Interest Form 🚀
                     </a>
                 </div>
@@ -175,54 +176,56 @@
         </div>
     </section>
 
-    <!-- WHAT IS CUSTOMIZABLE SECTION -->
-    <section id="customization" class="py-16">
+    <!-- CUSTOMIZATION SECTION (Themed with Lime Green Hint #b8e08d) -->
+    <section id="customization" class="py-16 bg-[#b8e08d]/5 border-b border-[#b8e08d]/20">
         <div class="max-w-4xl mx-auto px-6">
             <div class="text-center max-w-xl mx-auto mb-10">
+                <span class="inline-block px-3 py-1 rounded-full bg-[#b8e08d]/20 text-emerald-800 text-xs font-bold tracking-wider uppercase mb-3 border border-[#b8e08d]/40">Tailored For You</span>
                 <h2 class="text-2xl md:text-3xl font-extrabold text-slate-950">What Can Be Customized?</h2>
                 <p class="text-slate-600 text-sm mt-2">No rigid templates—we build it precisely to match your workflow.</p>
             </div>
 
-            <div class="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm max-w-2xl mx-auto">
+            <div class="bg-white border border-[#b8e08d]/40 rounded-2xl p-6 sm:p-8 shadow-sm max-w-2xl mx-auto">
                 <ul class="space-y-4 text-slate-700 text-sm md:text-base">
-                    <li class="flex items-center"><span class="logo-teal font-bold mr-3 text-lg">✓</span> <strong>Sound of pings:</strong> Distinct audio alerts for specific rooms or staff.</li>
-                    <li class="flex items-center"><span class="logo-teal font-bold mr-3 text-lg">✓</span> <strong>Number of buttons:</strong> Add as many operatories or status triggers as needed.</li>
-                    <li class="flex items-center"><span class="logo-teal font-bold mr-3 text-lg">✓</span> <strong>Names on buttons:</strong> Use your exact staff (Dr. A) and room titles (Op1).</li>
-                    <li class="flex items-center"><span class="logo-teal font-bold mr-3 text-lg">✓</span> <strong>Font & text size:</strong> Optimized readability for fast clinical glancing.</li>
-                    <li class="flex items-center"><span class="logo-teal font-bold mr-3 text-lg">✓</span> <strong>Colors:</strong> Custom button colors and active request card highlights.</li>
+                    <li class="flex items-center"><span class="text-[#88be52] font-bold mr-3 text-lg">✓</span> <strong>Sound of pings:</strong> Distinct audio alerts for specific rooms or staff.</li>
+                    <li class="flex items-center"><span class="text-[#88be52] font-bold mr-3 text-lg">✓</span> <strong>Number of buttons:</strong> Add as many operatories or status triggers as needed.</li>
+                    <li class="flex items-center"><span class="text-[#88be52] font-bold mr-3 text-lg">✓</span> <strong>Names on buttons:</strong> Use your exact staff (Dr. A) and room titles (Op1).</li>
+                    <li class="flex items-center"><span class="text-[#88be52] font-bold mr-3 text-lg">✓</span> <strong>Font & text size:</strong> Optimized readability for fast clinical glancing.</li>
+                    <li class="flex items-center"><span class="text-[#88be52] font-bold mr-3 text-lg">✓</span> <strong>Colors:</strong> Custom button colors and active request card highlights.</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- PRICING SECTION -->
+    <!-- PRICING SECTION (Themed with Soft Blue Hint #7fa9ec) -->
     <section id="pricing" class="py-16">
         <div class="max-w-4xl mx-auto px-6 text-center">
+            <span class="inline-block px-3 py-1 rounded-full bg-[#7fa9ec]/10 text-[#497cd9] text-xs font-bold tracking-wider uppercase mb-3 border border-[#7fa9ec]/30">Affordable Plan</span>
             <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">Simple, Transparent Pricing</h2>
             <p class="text-slate-600 text-sm mt-2">One affordable subscription. Customizations within the first 30 days are completely free!</p>
             
-            <div class="mt-8 bg-white border border-slate-200 rounded-3xl shadow-xl p-8 max-w-md mx-auto relative overflow-hidden">
-                <div class="absolute top-0 right-0 bg-[#57b5bc] text-slate-950 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-bl-xl">All-Inclusive</div>
-                <div class="text-sm font-bold logo-teal tracking-wide uppercase mb-2">Per Location License</div>
+            <div class="mt-8 bg-white border border-[#7fa9ec]/40 rounded-3xl shadow-xl p-8 max-w-md mx-auto relative overflow-hidden">
+                <div class="absolute top-0 right-0 bg-[#7fa9ec] text-slate-950 text-xs font-bold uppercase tracking-wider px-4 py-1.5 rounded-bl-xl">All-Inclusive</div>
+                <div class="text-sm font-bold text-[#497cd9] tracking-wide uppercase mb-2">Per Location License</div>
                 <div class="flex items-baseline justify-center space-x-1 my-3">
                     <span class="text-5xl font-black text-slate-900">$20</span>
                     <span class="text-slate-500 font-medium">/ month</span>
                 </div>
                 <p class="text-xs text-slate-600 mb-6">Billed monthly. Cancel anytime.</p>
                 
-                <div class="bg-cyan-50 border border-cyan-100 rounded-xl p-3.5 text-xs text-cyan-900 mb-6 text-left space-y-1">
-                    <p class="font-bold">✨ Customization Policy:</p>
+                <div class="bg-blue-50/60 border border-[#7fa9ec]/30 rounded-xl p-3.5 text-xs text-slate-800 mb-6 text-left space-y-1">
+                    <p class="font-bold text-[#3568bf]">✨ Customization Policy:</p>
                     <p>• <strong>First 30 Days:</strong> All customization requests are 100% free.</p>
                     <p>• <strong>After 30 Days:</strong> Just $5 per requested adjustment or layout update.</p>
                 </div>
                 
                 <ul class="text-left space-y-2.5 mb-6 text-xs sm:text-sm text-slate-700">
-                    <li class="flex items-center"><span class="text-emerald-500 font-bold mr-3">✓</span> Unlimited devices & staff browsers</li>
-                    <li class="flex items-center"><span class="text-emerald-500 font-bold mr-3">✓</span> Custom audio chimes & alerts</li>
-                    <li class="flex items-center"><span class="text-emerald-500 font-bold mr-3">✓</span> Dark mode & timer tracking</li>
+                    <li class="flex items-center"><span class="text-[#497cd9] font-bold mr-3">✓</span> Unlimited devices & staff browsers</li>
+                    <li class="flex items-center"><span class="text-[#497cd9] font-bold mr-3">✓</span> Custom audio chimes & alerts</li>
+                    <li class="flex items-center"><span class="text-[#497cd9] font-bold mr-3">✓</span> Dark mode & timer tracking</li>
                 </ul>
 
-                <a href="YOUR_INTEREST_FORM_URL_HERE" target="_blank" class="block w-full bg-teal-custom hover:bg-[#489aab] text-white font-bold py-3.5 rounded-xl shadow-lg transition text-sm text-center">
+                <a href="YOUR_INTEREST_FORM_URL_HERE" target="_blank" class="block w-full bg-[#7fa9ec] hover:bg-[#6895dc] text-slate-950 font-bold py-3.5 rounded-xl shadow-lg transition text-sm text-center">
                     Get Started / Fill Out Interest Form
                 </a>
             </div>
