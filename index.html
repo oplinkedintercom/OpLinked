@@ -20,7 +20,6 @@
     <!-- HEADER / NAVIGATION -->
     <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
         <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-            <!-- Clickable Logo taking user back to the top -->
             <a href="#" class="flex items-center space-x-3 group cursor-pointer">
                 <div class="grid grid-cols-2 gap-1 w-8 h-8 transition-transform group-hover:scale-105">
                     <div class="rounded-md bg-[#57b5bc]"></div>
@@ -235,13 +234,20 @@
 
     <!-- FOOTER -->
     <footer class="bg-white border-t border-slate-100 py-8">
-        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500">
-            <div class="flex items-center space-x-2 mb-2 sm:mb-0">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4">
+            <div class="flex items-center space-x-2.5">
+                <div class="grid grid-cols-2 gap-0.5 w-5 h-5">
+                    <div class="rounded-sm bg-[#57b5bc]"></div>
+                    <div class="rounded-sm bg-[#c4a5ec]"></div>
+                    <div class="rounded-sm bg-[#b8e08d]"></div>
+                    <div class="rounded-sm bg-[#7fa9ec]"></div>
+                </div>
                 <span class="font-bold"><span class="logo-black">Op</span><span class="logo-teal">Linked</span></span>
                 <span>— Simple Dental Intercom</span>
             </div>
-            <div>
-                © 2026 OpLinked. All rights reserved.
+            <div class="flex items-center space-x-6">
+                <a href="mailto:oplinkedintercom@gmail.com" class="hover:text-slate-800 transition font-medium">oplinkedintercom@gmail.com</a>
+                <span>© 2026 OpLinked. All rights reserved.</span>
             </div>
         </div>
     </footer>
