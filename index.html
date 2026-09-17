@@ -18,9 +18,54 @@
         .logo-black { color: #0f172a; }
         .bg-teal-custom { background-color: #57b5bc; }
         .bg-teal-custom:hover { background-color: #489aab; }
+
+        /* Custom Logo Scroll Progress Bar */
+        #scroll-progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: transparent;
+            z-index: 100;
+        }
+        #scroll-progress-bar {
+            height: 100%;
+            background: #57b5bc;
+            width: 0%;
+            transition: width 0.1s ease-out;
+        }
+        #scroll-logo-thumb {
+            position: fixed;
+            top: -2px;
+            left: 0%;
+            width: 24px;
+            height: 24px;
+            transform: translateX(-50%);
+            z-index: 101;
+            pointer-events: none;
+            transition: left 0.1s ease-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #scroll-logo-thumb img {
+            width: 20px;
+            height: 20px;
+            object-fit: contain;
+            filter: drop-shadow(0 1px 2px rgba(0,0,0,0.2));
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-[#57b5bc] selection:text-white">
+
+    <!-- Custom Logo Scroll Bar Elements -->
+    <div id="scroll-progress-container">
+        <div id="scroll-progress-bar"></div>
+    </div>
+    <div id="scroll-logo-thumb">
+        <img src="https://raw.githubusercontent.com/oplinkedintercom/OpLinked/main/oplinked-logo.png" alt="Scroll Logo">
+    </div>
 
     <!-- HEADER / NAVIGATION -->
     <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
@@ -143,9 +188,10 @@
                     <div>
                         <div class="text-xs font-bold uppercase tracking-wider text-[#8d67c5] mb-1">Ready to Get Started?</div>
                         <h4 class="font-bold text-slate-950 text-lg mb-2">Sign up today to start your free trial!</h4>
+                        <p class="text-xs text-slate-600 mb-6">Sign up with your office's information and an email address to receive a link to your OpLinked Intercom trial. No credit card required!</p>
                     </div>
-                    <a href="https://forms.gle/aZBnJtRLHw3M7ZpK8" target="_blank" class="bg-[#c4a5ec] hover:bg-[#b28ee5] text-slate-950 font-bold py-3 px-4 rounded-xl shadow transition text-sm block mt-4">
-                        Fill Out Interest Form 🚀
+                    <a href="https://forms.gle/aZBnJtRLHw3M7ZpK8" target="_blank" class="bg-[#c4a5ec] hover:bg-[#b28ee5] text-slate-950 font-bold py-3 px-4 rounded-xl shadow transition text-sm block">
+                        Sign Up / Free 14 Day Trial
                     </a>
                 </div>
 
@@ -250,6 +296,16 @@
                 alert("Failed to copy link. You can manually copy it from the address bar.");
             });
         }
+
+        // Scroll Progress Bar with Logo Thumb
+        window.addEventListener('scroll', () => {
+            const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            
+            document.getElementById('scroll-progress-bar').style.width = scrolled + '%';
+            document.getElementById('scroll-logo-thumb').style.left = scrolled + '%';
+        });
     </script>
 </body>
 </html>
