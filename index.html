@@ -19,7 +19,7 @@
         .bg-teal-custom { background-color: #57b5bc; }
         .bg-teal-custom:hover { background-color: #489aab; }
 
-        /* Custom Logo Scroll Progress Bar */
+        /* Custom Rolling Logo Scroll Progress Bar */
         #scroll-progress-container {
             position: fixed;
             top: 0;
@@ -33,25 +33,23 @@
             height: 100%;
             background: #57b5bc;
             width: 0%;
-            transition: width 0.1s ease-out;
         }
         #scroll-logo-thumb {
             position: fixed;
-            top: -2px;
+            top: -6px;
             left: 0%;
-            width: 24px;
-            height: 24px;
-            transform: translateX(-50%);
+            width: 28px;
+            height: 28px;
+            transform: translateX(-50%) rotate(0deg);
             z-index: 101;
             pointer-events: none;
-            transition: left 0.1s ease-out;
             display: flex;
             align-items: center;
             justify-content: center;
         }
         #scroll-logo-thumb img {
-            width: 20px;
-            height: 20px;
+            width: 24px;
+            height: 24px;
             object-fit: contain;
             filter: drop-shadow(0 1px 2px rgba(0,0,0,0.2));
         }
@@ -64,7 +62,7 @@
         <div id="scroll-progress-bar"></div>
     </div>
     <div id="scroll-logo-thumb">
-        <img src="https://raw.githubusercontent.com/oplinkedintercom/OpLinked/main/oplinked-logo.png" alt="Scroll Logo">
+        <img src="./oplinked-logo-v2.png" alt="Scroll Logo">
     </div>
 
     <!-- HEADER / NAVIGATION -->
@@ -297,14 +295,18 @@
             });
         }
 
-        // Scroll Progress Bar with Logo Thumb
+        // Rolling Scroll Progress Bar with Logo Thumb
         window.addEventListener('scroll', () => {
             const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
             const scrolled = (winScroll / height) * 100;
+            const rotation = scrolled * 14; // Multiplier controls how fast it rolls
             
             document.getElementById('scroll-progress-bar').style.width = scrolled + '%';
-            document.getElementById('scroll-logo-thumb').style.left = scrolled + '%';
+            
+            const thumb = document.getElementById('scroll-logo-thumb');
+            thumb.style.left = scrolled + '%';
+            thumb.style.transform = `translateX(-50%) rotate(${rotation}deg)`;
         });
     </script>
 </body>
